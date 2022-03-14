@@ -1,11 +1,11 @@
 {
-    "name": "puzzle_hack",
-    "short_name": "puzzle_hack",
+    "name": "Sliding Wordle",
+    "short_name": "Sliding Wordle",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Find the correct words by moving the tiles at the correct position.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
