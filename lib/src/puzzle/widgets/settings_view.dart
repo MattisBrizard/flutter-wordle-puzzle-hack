@@ -76,11 +76,14 @@ class _TileThemeSetting extends StatelessWidget {
           width: 150,
           child: Text(l10n.color_blind_mode),
         ),
-        CupertinoSwitch(
-          value: isColorBlindMode,
-          onChanged: (value) {
-            tileThemeBloc.toggle();
-          },
+        MouseRegion(
+          cursor: SystemMouseCursors.click,
+          child: CupertinoSwitch(
+            value: isColorBlindMode,
+            onChanged: (value) {
+              tileThemeBloc.toggle();
+            },
+          ),
         ),
       ],
     );
