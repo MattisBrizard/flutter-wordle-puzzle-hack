@@ -22,7 +22,7 @@ jobs:
       - name: Build
         run: |
           flutter pub get
-          flutter build web --web-renderer canvaskit --base-href /wordle-puzzle-hack/
+          flutter build web --web-renderer canvaskit --base-href /flutter-wordle-puzzle-hack/
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
