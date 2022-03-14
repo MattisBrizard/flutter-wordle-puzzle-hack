@@ -109,7 +109,7 @@ class _PuzzleHeader extends StatelessWidget {
     Key? key,
   }) : super(key: key);
 
-  static double height = 100;
+  static double height = 80;
   static const Map<ResponsiveLayoutSize, double>
       _horizontalPaddingResponsiveMap = {
     ResponsiveLayoutSize.small: 10,
@@ -133,7 +133,7 @@ class _PuzzleHeader extends StatelessWidget {
             child: Row(
               children: [
                 Container(
-                  margin: const EdgeInsets.symmetric(vertical: 15),
+                  margin: const EdgeInsets.symmetric(vertical: 10),
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   decoration: const ShapeDecoration(
                     color: Colors.black38,
