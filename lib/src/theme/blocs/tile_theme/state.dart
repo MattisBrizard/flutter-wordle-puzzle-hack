@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 
 class TileThemeState extends Equatable {
   const TileThemeState({
@@ -25,7 +25,7 @@ class ClassicThemeState extends TileThemeState {
       : super(
           letterCorrectPosition: const Color(0xFF548D4E),
           letterInWord: const Color(0xFFB49F3B),
-          letterNotInWord: const Color(0x66000000),
+          letterNotInWord: Colors.black54,
         );
 }
 
@@ -34,6 +34,6 @@ class ColorBlindThemeState extends TileThemeState {
       : super(
           letterCorrectPosition: const Color(0xFFF57839),
           letterInWord: const Color(0xFF85C0F9),
-          letterNotInWord: const Color(0x66000000),
+          letterNotInWord: Colors.black54,
         );
 }

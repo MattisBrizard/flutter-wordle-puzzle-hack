@@ -17,14 +17,15 @@ class BackgroundGradient extends StatelessWidget {
 
     return BlocListener<PuzzleBloc, PuzzleState>(
       listenWhen: (previous, current) {
-        // Update gradient when a new Word is correct.
         List<List<Tile>> words(List<Tile> tiles) {
           if (tiles.isEmpty) return [];
+          final dimension = current.puzzle.getDimension();
           return [
-            tiles.sublist(0, 4),
-            tiles.sublist(4, 8),
-            tiles.sublist(8, 12),
-            tiles.sublist(12, 15)
+            for (int i = 0; i < dimension; i++)
+              if (i != dimension - 1)
+                tiles.sublist(i * dimension, (i + 1) * dimension)
+              else
+                tiles.sublist(i * dimension, (i + 1) * dimension - 1),
           ];
         }
 
@@ -51,6 +52,7 @@ class BackgroundGradient extends StatelessWidget {
         return previousCorrectWordsNumber < currentCorrectWordsNumber;
       },
       listener: (context, state) {
+        // Update gradient when a new Word is correct.
         context.read<BackgroundGradientBloc>().updateGradient();
       },
       child: ImageFiltered(

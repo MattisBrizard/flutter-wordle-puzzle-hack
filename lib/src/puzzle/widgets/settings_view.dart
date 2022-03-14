@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gap/gap.dart';
 import 'package:puzzle_hack/src/core/widgets/app_button.dart';
-import 'package:puzzle_hack/src/core/widgets/responsive_layout_builder.dart';
 import 'package:puzzle_hack/src/l10n/l10n.dart';
 import 'package:puzzle_hack/src/theme/blocs/background_gradient/bloc.dart';
 import 'package:puzzle_hack/src/theme/blocs/locale.dart';

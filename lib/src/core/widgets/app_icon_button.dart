@@ -37,9 +37,8 @@ class AppIconButton extends StatelessWidget {
                 height: scale * _buttonSize,
                 decoration: ShapeDecoration(
                   shape: const StadiumBorder(),
-                  color: (isHover || isPressed)
-                      ? Colors.black.withOpacity(0.75)
-                      : Colors.black38,
+                  color:
+                      (isHover || isPressed) ? Colors.black38 : Colors.black54,
                 ),
                 child: Center(
                   child: Icon(icon),

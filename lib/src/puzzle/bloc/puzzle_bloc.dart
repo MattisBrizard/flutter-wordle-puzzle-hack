@@ -81,6 +81,7 @@ class PuzzleBloc extends Bloc<PuzzleEvent, PuzzleState> {
   /// Build a randomized, solvable puzzle of the given size.
   Puzzle _generatePuzzle(int size, String localeIdentifier) {
     final words = _wordsFromLocale(size, localeIdentifier);
+    
     final currentPositions = <Position>[];
     final correctPositions = <Position>[];
     final whitespacePosition = Position(x: size, y: size);

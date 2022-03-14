@@ -136,7 +136,7 @@ class _PuzzleHeader extends StatelessWidget {
                   margin: const EdgeInsets.symmetric(vertical: 10),
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   decoration: const ShapeDecoration(
-                    color: Colors.black38,
+                    color: Colors.black54,
                     shape: StadiumBorder(),
                   ),
                   child: const _FlutterWordleLogo(),
@@ -285,7 +285,7 @@ class _PuzzleScore extends StatelessWidget {
           vertical: 5,
         ),
         decoration: const ShapeDecoration(
-          color: Colors.black38,
+          color: Colors.black54,
           shape: StadiumBorder(),
         ),
         child: Row(
