@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gap/gap.dart';
 import 'package:puzzle_hack/src/core/widgets/app_button.dart';
+import 'package:puzzle_hack/src/l10n/l10n.dart';
 import 'package:puzzle_hack/src/puzzle/bloc/puzzle_bloc.dart';
 import 'package:puzzle_hack/src/theme/blocs/background_gradient/bloc.dart';
 import 'package:puzzle_hack/src/theme/blocs/locale.dart';
@@ -39,6 +40,7 @@ class _GameWonViewState extends State<GameWonView> {
   @override
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
+    final l10n = context.l10n;
     final numberOfMoves = context.select(
       (PuzzleBloc bloc) => bloc.state.numberOfMoves,
     );
@@ -55,18 +57,15 @@ class _GameWonViewState extends State<GameWonView> {
         mainAxisSize: MainAxisSize.min,
         children: [
           Text(
-            'Congrats!',
-            style: textTheme.headline2,
-          ),
-          Text(
-            'You won',
-            style: textTheme.headline2,
-          ),
-          Text(
-            'in $numberOfMoves moves',
-            style: textTheme.titleLarge,
+            l10n.congrats,
+            style: textTheme.headline3,
           ),
           const Gap(15),
+          Text(
+            l10n.you_won(numberOfMoves),
+            style: textTheme.titleLarge,
+          ),
+          const Gap(50),
           const _RestartButton(),
         ],
       )),

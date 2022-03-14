@@ -29,42 +29,30 @@ class SettingsView extends StatelessWidget {
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(32),
-          child: ResponsiveLayoutBuilder(
-              small: (context, child) => child!,
-              medium: (context, child) => SizedBox(
-                    width: MediaQuery.of(context).size.width / 1.5,
-                    child: child,
-                  ),
-              large: (context, child) => SizedBox(
-                    width: MediaQuery.of(context).size.width / 2,
-                    child: child,
-                  ),
-              child: (_) {
-                return Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      l10n.settings,
-                      style: textTheme.headline5,
-                    ),
-                    const Gap(20),
-                    const _TileThemeSetting(),
-                    const Gap(10),
-                    const _ChangeLocaleSetting(),
-                    const Gap(10),
-                    const _GradientBackgroundSetting(),
-                    const Gap(15),
-                    const Divider(),
-                    const Gap(15),
-                    Text(
-                      l10n.credits,
-                      style: textTheme.headline5,
-                    ),
-                    const Gap(15),
-                    const _CreditsDescription(),
-                  ],
-                );
-              }),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                l10n.settings,
+                style: textTheme.headline5,
+              ),
+              const Gap(20),
+              const _TileThemeSetting(),
+              const Gap(10),
+              const _ChangeLocaleSetting(),
+              const Gap(10),
+              const _GradientBackgroundSetting(),
+              const Gap(15),
+              const Divider(),
+              const Gap(15),
+              Text(
+                l10n.credits,
+                style: textTheme.headline5,
+              ),
+              const Gap(15),
+              const _CreditsDescription(),
+            ],
+          ),
         ),
       ),
     );
@@ -84,8 +72,10 @@ class _TileThemeSetting extends StatelessWidget {
 
     return Row(
       children: [
-        Text(l10n.color_blind_mode),
-        const Gap(20),
+        SizedBox(
+          width: 150,
+          child: Text(l10n.color_blind_mode),
+        ),
         CupertinoSwitch(
           value: isColorBlindMode,
           onChanged: (value) {
@@ -109,8 +99,10 @@ class _ChangeLocaleSetting extends StatelessWidget {
 
     return Row(
       children: [
-        Text(l10n.change_locale),
-        const Gap(20),
+        SizedBox(
+          width: 150,
+          child: Text(l10n.change_locale),
+        ),
         for (final locale in locales) ...[
           _LocaleRadioButton(locale: locale),
           const Gap(15),

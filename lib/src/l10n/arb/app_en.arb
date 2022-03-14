@@ -19,9 +19,8 @@
       }
     },
     "congrats": "Congrats!",
-    "you_won": "You won",
-    "in_number_of_moves": "in {count} moves",
-    "@in_number_of_moves": {
+    "you_won": "You won in {count} moves",
+    "@you_won": {
       "placeholders": {
         "count": {
           "type": "int"

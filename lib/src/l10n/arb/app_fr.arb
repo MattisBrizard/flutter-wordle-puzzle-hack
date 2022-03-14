@@ -18,10 +18,9 @@
         }
       }
     },
-    "congrats": "Congrats!",
-    "you_won": "You won",
-    "in_number_of_moves": "en {count} coups",
-    "@in_number_of_moves": {
+    "congrats": "Félicitations !",
+    "you_won": "Vous avez gagné en {count} coups",
+    "@you_won": {
       "placeholders": {
         "count": {
           "type": "int"

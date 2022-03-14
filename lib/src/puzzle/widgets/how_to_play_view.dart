@@ -24,46 +24,34 @@ class HowToPlayView extends StatelessWidget {
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(32),
-          child: ResponsiveLayoutBuilder(
-              small: (context, child) => child!,
-              medium: (context, child) => SizedBox(
-                    width: MediaQuery.of(context).size.width / 1.5,
-                    child: child,
-                  ),
-              large: (context, child) => SizedBox(
-                    width: MediaQuery.of(context).size.width / 2,
-                    child: child,
-                  ),
-              child: (_) {
-                return Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      l10n.how_to_play,
-                      style: textTheme.headline5,
-                    ),
-                    const Gap(30),
-                    const _GameplayDescription(),
-                    const Gap(15),
-                    const _AllWordsScrabbleValidDescription(),
-                    const Gap(15),
-                    const Divider(),
-                    const Gap(15),
-                    Text(
-                      l10n.examples,
-                      style: textTheme.headline5,
-                    ),
-                    const Gap(30),
-                    const _LetterInCorrectDescription(),
-                    const Gap(30),
-                    const _LetterInWordDescription(),
-                    const Gap(30),
-                    const _LetterNotInWordDescription(),
-                    const Gap(30),
-                    const _LetterUnauthorizedPositionDescription(),
-                  ],
-                );
-              }),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                l10n.how_to_play,
+                style: textTheme.headline5,
+              ),
+              const Gap(30),
+              const _GameplayDescription(),
+              const Gap(15),
+              const _AllWordsScrabbleValidDescription(),
+              const Gap(15),
+              const Divider(),
+              const Gap(15),
+              Text(
+                l10n.examples,
+                style: textTheme.headline5,
+              ),
+              const Gap(30),
+              const _LetterInCorrectDescription(),
+              const Gap(30),
+              const _LetterInWordDescription(),
+              const Gap(30),
+              const _LetterNotInWordDescription(),
+              const Gap(30),
+              const _LetterUnauthorizedPositionDescription(),
+            ],
+          ),
         ),
       ),
     );
