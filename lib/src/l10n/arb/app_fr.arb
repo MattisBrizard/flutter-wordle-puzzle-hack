@@ -1,0 +1,73 @@
+{
+    "show_settings": "Ouvrir les réglages",
+    "show_how_to_play": "Ouvrir comment jouer",
+    "reset_puzzle": "Réinitialiser le puzzle",
+    "number_of_moves": "{count,plural, =0{{count} coup} =1{{count} coup} other{{count} coups}}",
+    "@number_of_moves": {
+      "placeholders": {
+        "count": {
+          "type": "int"
+        }
+      }
+    },
+    "number_of_correct_tiles": "{count,plural, =0{{count} tuile} =1{{count} tuile} other{{count} tuiles}}",
+    "@number_of_correct_tiles": {
+      "placeholders": {
+        "count": {
+          "type": "int"
+        }
+      }
+    },
+    "congrats": "Congrats!",
+    "you_won": "You won",
+    "in_number_of_moves": "en {count} coups",
+    "@in_number_of_moves": {
+      "placeholders": {
+        "count": {
+          "type": "int"
+        }
+      }
+    },
+    "restart": "Recommencer",
+    "how_to_play": "Comment jouer ?",
+    "examples": "Exemples",
+    "gameplay_description": "Ce jeu est un mix entre Wordle et le Sliding Puzzle. L'objectif est de retrouver les mots en bougeant les tuiles. Les tuiles changent de couleurs selon leurs positions.",
+    "scrabble_valid_description": "Tous les mots sont valides au Scrabble.",
+    "word_example": "poire",
+    "letter_in_word_description": "La lettre {letter} est dans le mot, mais à la mauvaise position.",
+    "@letter_in_word_description": {
+      "placeholders": {
+        "letter": {
+          "type": "String"
+        }
+      }
+    },
+    "letter_correct_position_description": "La lettre {letter} est dans le mot, à la bonne place.",
+    "@letter_correct_position_description": {
+      "placeholders": {
+        "letter": {
+          "type": "String"
+        }
+      }
+    },
+    "letters_not_in_word_description": "Les lettres ne sont pas dans le mot.",
+    "letters_unauthorized_position_description": "La lettre {firstLetter} est dans le mot et à la bonne position, mais ce n'est pas la bonne lettre. Vous devez positionner une autre lettre {firstLetter} pour pouvoir compléter le puzzle. Idem pour la lettre {secondLetter} mais qui est à la mauvaise position.",
+    "@letters_unauthorized_position_description": {
+        "placeholders": {
+          "firstLetter": {
+            "type": "String"
+          },
+          "secondLetter": {
+            "type": "String"
+          }
+        }
+      },
+      "settings": "Réglages",
+      "credits": "Crédits",
+      "color_blind_mode": "Mode daltonien",
+      "change_locale": "Changer la langue",
+      "update_gradient": "Changer le dégradé",
+      "credits_developed_by": "Dévelopé par Mattis Brizard.",
+      "credits_inspired_by": "Inspiré par Wordle.",
+      "credits_based_on": "Basé sur l'exemple Slide Puzzle par Very Good Ventures."
+}

@@ -1,0 +1,73 @@
+{
+    "show_settings": "Show settings",
+    "show_how_to_play": "Show how to play",
+    "reset_puzzle": "Reset puzzle",
+    "number_of_moves": "{count,plural, =0{{count} move} =1{{count} move} other{{count} moves}}",
+    "@number_of_moves": {
+      "placeholders": {
+        "count": {
+          "type": "int"
+        }
+      }
+    },
+    "number_of_correct_tiles": "{count,plural, =0{{count} tile} =1{{count} tile} other{{count} tiles}}",
+    "@number_of_correct_tiles": {
+      "placeholders": {
+        "count": {
+          "type": "int"
+        }
+      }
+    },
+    "congrats": "Congrats!",
+    "you_won": "You won",
+    "in_number_of_moves": "in {count} moves",
+    "@in_number_of_moves": {
+      "placeholders": {
+        "count": {
+          "type": "int"
+        }
+      }
+    },
+    "restart": "Restart",
+    "how_to_play": "How to play?",
+    "examples": "Examples",
+    "gameplay_description": "This game is a mix of Wordle and the Slide Puzzle. The goal is to find the words by moving the tiles. The tiles will change color based on their positions.",
+    "scrabble_valid_description": "All words are Scrabble valid.",
+    "word_example": "brain",
+    "letter_in_word_description": "The letter {letter} is in the word, but at the wrong position.",
+    "@letter_in_word_description": {
+      "placeholders": {
+        "letter": {
+          "type": "String"
+        }
+      }
+    },
+    "letter_correct_position_description": "The letter {letter} is in the word, at the right position.",
+    "@letter_correct_position_description": {
+      "placeholders": {
+        "letter": {
+          "type": "String"
+        }
+      }
+    },
+    "letters_not_in_word_description": "The letters are not in word.",
+    "letters_unauthorized_position_description": "The letter {firstLetter} is in the word and at the right position, but it's not the right one, you have to position another {firstLetter} letter in order to complete the puzzle. Same for {secondLetter} but with the wrong position.",
+    "@letters_unauthorized_position_description": {
+        "placeholders": {
+          "firstLetter": {
+            "type": "String"
+          },
+          "secondLetter": {
+            "type": "String"
+          }
+        }
+      },
+      "settings": "Settings",
+      "credits": "Credits",
+      "color_blind_mode": "Color-blind mode",
+      "change_locale": "Change locale",
+      "update_gradient": "Update gradient",
+      "credits_developed_by": "Developed by Mattis Brizard.",
+      "credits_inspired_by": "Inspired by Wordle.",
+      "credits_based_on": "Based on the Very Good Ventures Slide Puzzle example."
+}
